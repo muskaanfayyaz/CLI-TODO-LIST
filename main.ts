@@ -11,7 +11,7 @@ let addTask = await inquirer.prompt(
     [
         {
             type: "input",
-            name: "todo",
+            name: "todo_q1",
             message: "What you want add in your todo list ?"
         },
         {
@@ -29,7 +29,7 @@ let addTask = await inquirer.prompt(
     ]
 );
 
-todo.push(addTask.todo);
+todo.push(addTask.todo_q1);
 condition= addTask.confirm 
 console.log(todo);
 
